@@ -1,0 +1,183 @@
+* {
+	box-sizing: border-box;  
+}
+
+html {
+	height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(to right top, #796465, #CB8589, #D7B29D, #E8D2AE);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	font-family: helvetica;
+}
+
+.icon {
+	max-width: 50%;
+	margin-left: 5%;
+	margin-right: 15%;
+	margin-top: 4%;
+	
+}
+
+.box {
+	background-color: #ffffff;
+	border-radius: 10%;
+}
+
+#celsius, #wind, #direction {
+	margin-top: 20%;
+	margin-left: 10%;
+	font-size: 25px;
+}
+
+#results {
+	background-color: #ffffff;
+	justify-content: flex-start; 
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center; 
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 200%;
+	margin-top: 3%;
+	max-width: 90%;
+	border-radius: 8%;
+	padding: 6%;
+	font-size: 14px;
+	
+}
+
+.hidden {
+	display: none;
+}
+
+h1, #city {
+	margin-top: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; 
+	align-items: center; 
+	Color: white;
+	font-weight: bold;
+}
+
+.title {
+	font-weight: bold;
+}
+#logo {
+	max-width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; 
+	align-items: center; 
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.blocks {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.block {
+	flex: 1;
+	padding: 10px;
+	
+}
+
+.block.full {
+	width: 100%;
+}
+
+
+@media screen and (min-width: 440px) and (max-width: 759px) { /*vanaf tablet*/
+	
+	body {
+		background-image: linear-gradient(to right top, #617073 , #7A93AC, #92BCEA, #AFB3F7);
+	}
+	
+	
+	#celsius, #wind, #direction {
+		margin-top: 20%;
+		margin-left: 25%;
+		font-size: 30px;
+		font-weight: bold;
+	}
+	
+	h1 {
+		font-size: 40px;
+	}
+}
+
+@media screen and (min-width: 760px) and (max-width: 1023px) { /*vanaf laptop*/
+	
+	body {
+		background-image: linear-gradient(to right top, #84DCCF , #A6D9F7, #BCCCE0, #BF98A0);
+	}
+	
+	#celsius, #wind, #direction {
+		margin-top: 20%;
+		margin-left: 25%;
+		font-size: 35px;
+		font-weight: bold;
+	}
+	
+	#results {
+		font-size: 20px;
+	}
+	
+	h1 {
+		font-size: 50px;
+	}
+	
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) { /*vanaf desktop*/
+	
+	body {
+		background-image: linear-gradient(to right top, #DADDD8 , #C7D59F, #B7CE63, #8FB339);
+	}
+	
+	#celsius, #wind, #direction {
+		margin-top: 20%;
+		margin-left: 25%;
+		font-size: 40px;
+		font-weight: bold;
+	}
+	
+	#results {
+		font-size: 25px;
+	}
+	
+	h1 {
+		font-size: 55px;
+	}	
+} 
+
+@media screen and (min-width: 1440px) { /*vanaf 4k*/
+	
+	body {
+		background-image: linear-gradient(to right top, #CDD6D0 , #D6CBC1, #D6A99A, #E16036);
+	}
+	
+	#celsius, #wind, #direction {
+		margin-top: 20%;
+		margin-left: 25%;
+		font-size: 70px;
+		font-weight: bold;
+	}
+	
+	#results {
+		font-size: 45px;
+	}
+	
+	h1 {
+		font-size: 80px;
+	}  
+}
